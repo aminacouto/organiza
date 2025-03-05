@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+aside {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+main {
+    width: 75%;
+    padding: 20px;
+}
+nav a {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #0056b3;
+}
+.concept {
+    display: none;
+}
+.concept.active {
+    display: block;
+}
