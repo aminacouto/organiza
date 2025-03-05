@@ -55,13 +55,8 @@ body {
     font-family: Arial, sans-serif;
     margin-top: 80px;
 }
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 900px;
-    margin: 20px auto;
-    gap: 20px;
+h1{
+    text-align: center;
 }
 form {
     background-color: var(--cor-cinza);
