@@ -3,136 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/geral-style.css">
     <link rel="stylesheet" href="style/manual-style.css">
     <title>Manual de Educação Financeira</title>
 </head>
-<body>
-
-<aside>
-    <nav>
-        <a href="#" data-target="introducao">Introdução</a>
-        <a href="#" data-target="orçamento">Orçamento</a>
-        <a href="#" data-target="receita">Receita</a>
-        <a href="#" data-target="despesas">Despesas Fixas e Variáveis</a>
-        <a href="#" data-target="poupança">Poupança</a>
-        <a href="#" data-target="investimentos">Investimentos</a>
-        <a href="#" data-target="inflação">Inflação</a>
-        <a href="#" data-target="juros">Juros</a>
-        <a href="#" data-target="endividamento">Endividamento</a>
-        <a href="#" data-target="dicas">Dicas para um Bom Controle Financeiro</a>
-        <a href="#" data-target="gerenciador">Como Utilizar o Gerenciador Financeiro</a>
-        <a href="#" data-target="exercicios">Exercícios e Exemplos Práticos</a>
-        <a href="#" data-target="recursos">Recursos Extras</a>
-        <a href="#" data-target="conclusao">Conclusão</a>
+<header>
+    <div class="logo">
+        <img src="asset/logo-bg.png" alt="Logo da Plataforma">
+    </div>
+    <nav id="navMenu">
+        <a href="index.html">Início</a>
+        <a href="manual.html">Manual</a>
+        <a href="gerenciador.html">Gerenciador</a>
     </nav>
-</aside>
+</header>
 
-<main>
-    <!-- Seções de Conceitos Básicos -->
-    <div id="introducao" class="concept active">
-        <h2>Introdução</h2>
-        <p>A educação financeira é uma habilidade essencial para garantir estabilidade econômica e qualidade de vida. No ambiente escolar, introduzir conceitos financeiros pode preparar alunos e professores para tomar decisões mais conscientes sobre dinheiro. Este manual tem como objetivo apresentar conceitos básicos de finanças pessoais e oferecer ferramentas para um planejamento financeiro eficiente.</p>
-    </div>
-    <div id="orçamento" class="concept">
-        <h2>Orçamento</h2>
-        <p>Planejamento detalhado das receitas e despesas ao longo de um período. Um orçamento bem estruturado ajuda a evitar gastos desnecessários e permite um maior controle sobre as finanças.</p>
-    </div>
-    <div id="receita" class="concept">
-        <h2>Receita</h2>
-        <p>Todo o dinheiro que você recebe, seja de mesada, salário, trabalhos autônomos, benefícios governamentais ou outras fontes de renda.</p>
-    </div>
-    <div id="despesas" class="concept">
-        <h2>Despesas Fixas e Variáveis</h2>
-        <p>Despesas fixas: Gastos recorrentes e previsíveis, como aluguel, contas de luz e internet. <br>Despesas variáveis: Gastos que mudam de mês para mês, como lazer, alimentação fora de casa e compras eventuais.</p>
-    </div>
-    <div id="poupança" class="concept">
-        <h2>Poupança</h2>
-        <p>Reserva financeira destinada a emergências ou realização de metas futuras. Para uma boa poupança, recomenda-se guardar pelo menos 10% da renda mensal.</p>
-    </div>
-    <div id="investimentos" class="concept">
-        <h2>Investimentos</h2>
-        <p>Aplicação de dinheiro em ativos financeiros ou bens que possam gerar rendimento ao longo do tempo. Os investimentos podem ser de baixo, médio ou alto risco e incluem opções como caderneta de poupança, ações, fundos imobiliários e previdência privada.</p>
-    </div>
-    <div id="inflação" class="concept">
-        <h2>Inflação</h2>
-        <p>Aumento contínuo e generalizado dos preços de bens e serviços ao longo do tempo, reduzindo o poder de compra do dinheiro.</p>
-    </div>
-    <div id="juros" class="concept">
-        <h2>Juros</h2>
-        <p>Custo do dinheiro ao longo do tempo. Podem ser juros simples (calculados sobre o valor inicial) ou juros compostos (calculados sobre o valor acumulado, o que faz com que cresçam exponencialmente).</p>
-    </div>
-    <div id="endividamento" class="concept">
-        <h2>Endividamento</h2>
-        <p>Uso excessivo de crédito ou empréstimos sem planejamento, podendo levar a dificuldades financeiras. O ideal é manter as dívidas sob controle e evitar comprometer mais de 30% da renda mensal com pagamentos parcelados.</p>
-    </div>
+<body>
+    <main>
+        <aside id="asideManual">
+            <nav id="navManual">
+                <a href="#" data-target="introducao">Introdução</a>
+                <a href="#" data-target="orçamento">Orçamento</a>
+                <a href="#" data-target="receita">Receita</a>
+                <a href="#" data-target="despesas">Despesas Fixas e Variáveis</a>
+                <a href="#" data-target="poupança">Poupança</a>
+                <a href="#" data-target="investimentos">Investimentos</a>
+                <a href="#" data-target="inflação">Inflação</a>
+                <a href="#" data-target="juros">Juros</a>
+                <a href="#" data-target="endividamento">Endividamento</a>
+                <a href="#" data-target="dicas">Dicas para um Bom Controle Financeiro</a>
+                <a href="#" data-target="gerenciador">Como Utilizar o Gerenciador Financeiro</a>
+                <a href="#" data-target="exercicios">Exercícios e Exemplos Práticos</a>
+                <a href="#" data-target="recursos">Recursos Extras</a>
+                <a href="#" data-target="conclusao">Conclusão</a>
+            </nav>
+        </aside>
 
-    <!-- Seções adicionais -->
-    <div id="dicas" class="concept">
-        <h2>Dicas para um Bom Controle Financeiro</h2>
-        <ul>
-            <li>Registre todas as entradas e saídas de dinheiro.</li>
-            <li>Defina metas financeiras de curto e longo prazo.</li>
-            <li>Evite compras por impulso.</li>
-            <li>Utilize o gerenciador financeiro da plataforma para acompanhar seus gastos.</li>
-            <li>Estabeleça um percentual da renda para economizar todo mês.</li>
-        </ul>
-    </div>
+    
+        <!-- Seções de Conceitos Básicos -->
+        <div id="introducao" class="concept active">
+            <h2>Introdução</h2>
+            <p>A educação financeira é uma habilidade essencial para garantir estabilidade econômica e qualidade de vida. No ambiente escolar, introduzir conceitos financeiros pode preparar alunos e professores para tomar decisões mais conscientes sobre dinheiro. Este manual tem como objetivo apresentar conceitos básicos de finanças pessoais e oferecer ferramentas para um planejamento financeiro eficiente.</p>
+        </div>
+        <div id="orçamento" class="concept">
+            <h2>Orçamento</h2>
+            <p>Planejamento detalhado das receitas e despesas ao longo de um período. Um orçamento bem estruturado ajuda a evitar gastos desnecessários e permite um maior controle sobre as finanças.</p>
+        </div>
+        <div id="receita" class="concept">
+            <h2>Receita</h2>
+            <p>Todo o dinheiro que você recebe, seja de mesada, salário, trabalhos autônomos, benefícios governamentais ou outras fontes de renda.</p>
+        </div>
+        <div id="despesas" class="concept">
+            <h2>Despesas Fixas e Variáveis</h2>
+            <p>Despesas fixas: Gastos recorrentes e previsíveis, como aluguel, contas de luz e internet. <br>Despesas variáveis: Gastos que mudam de mês para mês, como lazer, alimentação fora de casa e compras eventuais.</p>
+        </div>
+        <div id="poupança" class="concept">
+            <h2>Poupança</h2>
+            <p>Reserva financeira destinada a emergências ou realização de metas futuras. Para uma boa poupança, recomenda-se guardar pelo menos 10% da renda mensal.</p>
+        </div>
+        <div id="investimentos" class="concept">
+            <h2>Investimentos</h2>
+            <p>Aplicação de dinheiro em ativos financeiros ou bens que possam gerar rendimento ao longo do tempo. Os investimentos podem ser de baixo, médio ou alto risco e incluem opções como caderneta de poupança, ações, fundos imobiliários e previdência privada.</p>
+        </div>
+        <div id="inflação" class="concept">
+            <h2>Inflação</h2>
+            <p>Aumento contínuo e generalizado dos preços de bens e serviços ao longo do tempo, reduzindo o poder de compra do dinheiro.</p>
+        </div>
+        <div id="juros" class="concept">
+            <h2>Juros</h2>
+            <p>Custo do dinheiro ao longo do tempo. Podem ser juros simples (calculados sobre o valor inicial) ou juros compostos (calculados sobre o valor acumulado, o que faz com que cresçam exponencialmente).</p>
+        </div>
+        <div id="endividamento" class="concept">
+            <h2>Endividamento</h2>
+            <p>Uso excessivo de crédito ou empréstimos sem planejamento, podendo levar a dificuldades financeiras. O ideal é manter as dívidas sob controle e evitar comprometer mais de 30% da renda mensal com pagamentos parcelados.</p>
+        </div>
 
-    <div id="gerenciador" class="concept">
-        <h2>Como Utilizar o Gerenciador Financeiro</h2>
-        <p>Nosso gerenciador financeiro online permite que você:</p>
-        <ul>
-            <li>Registre sua receita e despesas.</li>
-            <li>Visualize gráficos de controle financeiro.</li>
-            <li>Acompanhe sua evolução ao longo do tempo.</li>
-            <li>Defina metas de economia.</li>
-        </ul>
-    </div>
+        <!-- Seções adicionais -->
+        <div id="dicas" class="concept">
+            <h2>Dicas para um Bom Controle Financeiro</h2>
+            <ul>
+                <li>Registre todas as entradas e saídas de dinheiro.</li>
+                <li>Defina metas financeiras de curto e longo prazo.</li>
+                <li>Evite compras por impulso.</li>
+                <li>Utilize o gerenciador financeiro da plataforma para acompanhar seus gastos.</li>
+                <li>Estabeleça um percentual da renda para economizar todo mês.</li>
+            </ul>
+        </div>
 
-    <div id="exercicios" class="concept">
-        <h2>Exercícios e Exemplos Práticos</h2>
-        <ul>
-            <li>Desafio do Orçamento: Anote todos os seus gastos por uma semana e analise onde pode economizar.</li>
-            <li>Planejamento para um Objetivo: Simule quanto tempo levaria para juntar dinheiro para algo que deseja.</li>
-            <li>Simulação de Juros: Entenda como os juros podem trabalhar a favor (investimentos) ou contra (empréstimos).</li>
-        </ul>
-    </div>
+        <div id="gerenciador" class="concept">
+            <h2>Como Utilizar o Gerenciador Financeiro</h2>
+            <p>Nosso gerenciador financeiro online permite que você:</p>
+            <ul>
+                <li>Registre sua receita e despesas.</li>
+                <li>Visualize gráficos de controle financeiro.</li>
+                <li>Acompanhe sua evolução ao longo do tempo.</li>
+                <li>Defina metas de economia.</li>
+            </ul>
+        </div>
 
-    <div id="recursos" class="concept">
-        <h2>Recursos Extras</h2>
-        <ul>
-            <li>Links para artigos e vídeos sobre educação financeira.</li>
-            <li>Modelos de planilhas para quem prefere controlar offline.</li>
-            <li>Indicação de livros e aplicativos financeiros.</li>
-        </ul>
-    </div>
+        <div id="exercicios" class="concept">
+            <h2>Exercícios e Exemplos Práticos</h2>
+            <ul>
+                <li>Desafio do Orçamento: Anote todos os seus gastos por uma semana e analise onde pode economizar.</li>
+                <li>Planejamento para um Objetivo: Simule quanto tempo levaria para juntar dinheiro para algo que deseja.</li>
+                <li>Simulação de Juros: Entenda como os juros podem trabalhar a favor (investimentos) ou contra (empréstimos).</li>
+            </ul>
+        </div>
 
-    <div id="conclusao" class="concept">
-        <h2>Conclusão</h2>
-        <p>Com um bom planejamento e conhecimento financeiro, é possível evitar dívidas desnecessárias e garantir um futuro mais seguro. Utilize este manual e o gerenciador financeiro para começar sua jornada de educação financeira!</p>
-    </div>
-</main>
+        <div id="recursos" class="concept">
+            <h2>Recursos Extras</h2>
+            <ul>
+                <li>Links para artigos e vídeos sobre educação financeira.</li>
+                <li>Modelos de planilhas para quem prefere controlar offline.</li>
+                <li>Indicação de livros e aplicativos financeiros.</li>
+            </ul>
+        </div>
 
-<script>
-    // JavaScript para alternar entre os conceitos
-    const links = document.querySelectorAll('nav a');
-    const concepts = document.querySelectorAll('.concept');
+        <div id="conclusao" class="concept">
+            <h2>Conclusão</h2>
+            <p>Com um bom planejamento e conhecimento financeiro, é possível evitar dívidas desnecessárias e garantir um futuro mais seguro. Utilize este manual e o gerenciador financeiro para começar sua jornada de educação financeira!</p>
+        </div>
+    </main>
 
-    links.forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
+    <script>
+        // JavaScript para alternar entre os conceitos
+        const links = document.querySelectorAll('nav a');
+        const concepts = document.querySelectorAll('.concept');
 
-            // Remover a classe 'active' de todos os conceitos
-            concepts.forEach(concept => concept.classList.remove('active'));
+        links.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
 
-            // Adicionar a classe 'active' ao conceito selecionado
-            const targetId = link.getAttribute('data-target');
-            const targetConcept = document.getElementById(targetId);
-            targetConcept.classList.add('active');
+                // Remover a classe 'active' de todos os conceitos
+                concepts.forEach(concept => concept.classList.remove('active'));
+
+                // Adicionar a classe 'active' ao conceito selecionado
+                const targetId = link.getAttribute('data-target');
+                const targetConcept = document.getElementById(targetId);
+                targetConcept.classList.add('active');
+            });
         });
-    });
-</script>
+    </script>
 
 </body>
 </html>

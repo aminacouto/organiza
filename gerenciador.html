@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="geral-style.css">
     <link rel="stylesheet" href="style/gerenciador-style.css">
     <title>Gerenciador mensal</title>
 </head>
+<header>
+    <div class="logo">
+        <img src="asset/logo-bg.png" alt="Logo da Plataforma">
+    </div>
+    <nav id="navMenu">
+        <a href="index.html">Início</a>
+        <a href="manual.html">Manual</a>
+        <a href="gerenciador.html">Gerenciador</a>
+    </nav>
+</header>
 <body>
     <h1>Gerenciador Mensal</h1>
-    <form id="entryForm">
-        <label for="type">Tipo:</label>
-        <select id="type" name="type">
-            <option value="despesa">Despesa</option>
-            <option value="renda">Renda</option>
-        </select>
-        <label for="description">Descrição:</label>
-        <input type="text" id="description" name="description" required>
-        <label for="amount">Valor:</label>
-        <input type="number" id="amount" name="amount" required>
-        <button type="submit">Adicionar</button>
-    </form>
-    <table>
-        <thead>
-            <tr>
-                <th>Tipo</th>
-                <th>Descrição</th>
-                <th>Valor</th>
-            </tr>
-        </thead>
-        <tbody id="entriesTableBody">
-            <!-- Entradas serão adicionadas aqui -->
-        </tbody>
-    </table>
+    <div class="conteiner">
+        <form id="entryForm">
+            <label for="type">Tipo:</label>
+            <select id="type" name="type">
+                <option value="despesa">Despesa</option>
+                <option value="renda">Renda</option>
+            </select>
+            <label for="description">Descrição:</label>
+            <input type="text" id="description" name="description" required>
+            <label for="amount">Valor:</label>
+            <input type="number" id="amount" name="amount" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="entriesTableBody">
+                <!-- Entradas serão adicionadas aqui -->
+            </tbody>
+        </table>
+    </div>
     <script>
         document.getElementById('entryForm').addEventListener('submit', function(event) {
             event.preventDefault();

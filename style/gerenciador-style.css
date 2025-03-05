@@ -1,11 +1,171 @@
+:root {
+    --cor-verde: rgb(97, 136, 25);
+    --cor-destaque: rgb(55, 105, 16);
+    --cor-fundo: rgb(30, 30, 30);
+    --cor-cinza: rgb(45, 45, 45);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--cor-cinza);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+    border-bottom: 3px solid var(--cor-verde);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+.logo img {
+    width: 200px;    
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+header a:hover {
+    color: var(--cor-destaque);
+}
+
+body {    
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-fundo);
+    font-family: Arial, sans-serif;
+    margin-top: 80px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 20px auto;
+    gap: 20px;
+}
+form {
+    background-color: var(--cor-cinza);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Campos de entrada */
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--cor-destaque);
+    border-radius: 5px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+form input:focus, form select:focus {
+    border-color: var(--cor-verde);
+}
+
+form button {
+    background-color: var(--cor-verde);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: var(--cor-destaque);
+}
+/* ======= ESTILIZAÇÃO DA TABELA ======= */
 table {
     width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
     border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--cor-cinza);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-table, th, td {
-    border: 1px solid black;
+
+/* Cabeçalho da tabela */
+thead {
+    background-color: var(--cor-verde);
+    color: white;
+    text-transform: uppercase;
 }
+
 th, td {
-    padding: 8px;
+    padding: 12px;
     text-align: left;
+}
+
+/* Linhas alternadas para melhor visualização */
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Efeito hover nas linhas */
+tbody tr:hover {
+    background-color: var(--cor-destaque);
+    color: white;
+    cursor: pointer;
+}
+
+th {
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+    
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
 }
