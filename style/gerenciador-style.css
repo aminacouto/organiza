@@ -131,6 +131,37 @@ form button {
 form button:hover {
     background-color: var(--cor-destaque);
 }
+button.edit-btn {
+    background-color: var(--cor-fundo);
+    color: var(--cor-letra);
+    font-size: 14px;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-right: 2px;
+}
+
+button.edit-btn:hover {
+    opacity: 80%;
+}
+
+/* Estilo para o botão de excluir */
+button.delete-btn {
+    background-color: var(--cor-fundo);
+    color: var(--cor-letra);
+    font-size: 14px;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button.delete-btn:hover {
+    opacity: 80%;
+}
 /* ======= ESTILIZAÇÃO DA TABELA ======= */
 .table-container {
     width: 55%;
