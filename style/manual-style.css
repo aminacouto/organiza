@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 :root{
     --cor-verde: rgb(97, 136, 25);
     --cor-destaque: rgb(55, 105, 16);
     --cor-fundo: rgb(30, 30, 30);
+    --cor-fundo-2: rgba(255, 255, 255, 0.05);
     --cor-cinza: rgb(45, 45, 45);
+    --cor-letra: rgb(245, 245, 245);
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -16,7 +21,7 @@ header {
     justify-content: space-between; 
     align-items: center;
     padding: 15px 30px;
-    width: 100%;
+    width: 100vw;
     border-bottom: 3px solid var(--cor-verde);
     position: fixed;
     top: 0;
@@ -24,7 +29,7 @@ header {
     z-index: 1000; 
 }
 .logo img {
-    width: 200px;    
+    width: 180px;    
 }
 
 header nav {
@@ -33,67 +38,91 @@ header nav {
 }
 
 header a {
-    color: white;
+    color: var(--cor-letra);
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 header a:hover {
-    color: var(--cor-destaque);
+    background-color: var(--cor-destaque);
 }
 
-body {
-    color: white;
-    width: 100vw;
+body, html {
     height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: var(--cor-fundo);
-    font-family: Arial, sans-serif;
-    margin-top: 80px;
+    color: var(--cor-letra);
 }
 
 main {
     display: flex;
     flex: 1;
+    margin-top: 30px;
 }
 
 #asideManual {
-    width: 20%;
+    width: 350px;
     background-color: var(--cor-cinza);
     padding: 20px;
-    border-right: 1px solid #070707;
+    border-right: 1px solid var(--cor-destaque);
     flex-shrink: 0;
 }
 
-#content {
-    width: 80%;
-    padding: 20px;
-}
-
 #navManual a {
-    display: block;
-    padding: 10px;
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin: 8px 0;
     background-color: var(--cor-verde);
-    color: white;
+    color: var(--cor-letra);
     text-decoration: none;
     border-radius: 5px;
-    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s;
 }
 
 #navManual a:hover {
     background-color: var(--cor-destaque);
+    transform: scale(1.05);
 }
 
 .concept {
     display: none;
-    padding: 20px;
+    padding: 25px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: var(--cor-fundo-2);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease-in-out;
 }
 
 .concept.active {
     display: block;
-    padding: 20px;
+    opacity: 1;
+}
+.concept h2 {
+    color: var(--cor-verde);
+    margin-bottom: 10px;
+    border-left: 5px solid var(--cor-verde);
+    padding-left: 10px;
+}
+
+.concept p, .concept ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.concept ul {
+    padding-left: 20px;
+}
+
+.concept ul li {
+    margin-bottom: 8px;
 }

@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
 :root {
     --cor-verde: rgb(97, 136, 25);
     --cor-destaque: rgb(55, 105, 16);
     --cor-fundo: rgb(30, 30, 30);
-    --cor-cinza: rgb(45, 45, 45);
+    --cor-cinza: rgb(45, 45, 45);    
+    --cor-letra: rgb(245, 245, 245);
+
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -25,7 +31,7 @@ header {
     z-index: 1000; 
 }
 .logo img {
-    width: 200px;    
+    width: 180px;    
 }
 
 header nav {
@@ -34,36 +40,52 @@ header nav {
 }
 
 header a {
-    color: white;
+    color: var(--cor-letra);
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 header a:hover {
-    color: var(--cor-destaque);
+    background-color: var(--cor-destaque);
 }
 
-body {    
-    color: white;
-    width: 100vw;
+body, html {    
+    color: var(--cor-letra);
     height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: var(--cor-fundo);
-    font-family: Arial, sans-serif;
-    margin-top: 80px;
+}
+main {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
 }
 h1{
+    margin-top: 80px;
     text-align: center;
 }
 form {
     background-color: var(--cor-cinza);
     padding: 20px;
     border-radius: 10px;
-    max-width: 500px;
-    margin: 20px auto;
+    max-width: 400px;
+    height: fit-content;
+    margin: 10px auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
@@ -74,7 +96,7 @@ form {
 form label {
     font-size: 14px;
     font-weight: bold;
-    color: white;
+    color: var(--cor-letra);
 }
 
 /* Campos de entrada */
@@ -85,7 +107,7 @@ form input, form select {
     border: 2px solid var(--cor-destaque);
     border-radius: 5px;
     background-color: rgb(50, 50, 50);
-    color: white;
+    color: var(--cor-letra);
     outline: none;
     transition: border 0.3s ease-in-out;
 }
@@ -96,7 +118,7 @@ form input:focus, form select:focus {
 
 form button {
     background-color: var(--cor-verde);
-    color: white;
+    color: var(--cor-letra);
     font-size: 16px;
     font-weight: bold;
     padding: 12px;
@@ -110,13 +132,16 @@ form button:hover {
     background-color: var(--cor-destaque);
 }
 /* ======= ESTILIZAÇÃO DA TABELA ======= */
+.table-container {
+    width: 55%;
+}
 table {
     width: 100%;
     max-width: 800px;
     margin: 20px auto;
     border-collapse: collapse;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: auto;
     background-color: var(--cor-cinza);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -124,7 +149,7 @@ table {
 /* Cabeçalho da tabela */
 thead {
     background-color: var(--cor-verde);
-    color: white;
+    color: var(--cor-letra);
     text-transform: uppercase;
 }
 
@@ -141,7 +166,7 @@ tbody tr:nth-child(even) {
 /* Efeito hover nas linhas */
 tbody tr:hover {
     background-color: var(--cor-destaque);
-    color: white;
+    color: var(--cor-letra);
     cursor: pointer;
 }
 
@@ -154,13 +179,18 @@ td {
 }
 
 /* Ajuste para telas menores */
-@media (max-width: 768px) {
-    table {
-        width: 100%;
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    th, td {
-        padding: 10px;
-        font-size: 14px;
+
+    form {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .table-container {
+        width: 100%;
     }
 }

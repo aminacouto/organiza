@@ -18,57 +18,63 @@
 </header>
 <body>
     <h1>Gerenciador Mensal</h1>
+    <main>
+        <div class="container">
+            <form id="entryForm">
+                <label for="type">Tipo:</label>
+                <select id="type" name="type">
+                    <option value="despesa">Despesa</option>
+                    <option value="renda">Renda</option>
+                </select>
+                <label for="description">Descrição:</label>
+                <input type="text" id="description" name="description" required>
+                <label for="amount">Valor:</label>
+                <input type="number" id="amount" name="amount" required>
+                <button type="submit">Adicionar</button>
+            </form>
     
-    <form id="entryForm">
-        <label for="type">Tipo:</label>
-        <select id="type" name="type">
-            <option value="despesa">Despesa</option>
-            <option value="renda">Renda</option>
-        </select>
-        <label for="description">Descrição:</label>
-        <input type="text" id="description" name="description" required>
-        <label for="amount">Valor:</label>
-        <input type="number" id="amount" name="amount" required>
-        <button type="submit">Adicionar</button>
-    </form>
-    <table>
-        <thead>
-            <tr>
-                <th>Tipo</th>
-                <th>Descrição</th>
-                <th>Valor</th>
-            </tr>
-        </thead>
-        <tbody id="entriesTableBody">
-            <!-- Entradas serão adicionadas aqui -->
-        </tbody>
-    </table>
-    <script>
-        document.getElementById('entryForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const type = document.getElementById('type').value;
-            const description = document.getElementById('description').value;
-            const amount = document.getElementById('amount').value;
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="entriesTableBody">
+                        <!-- Entradas serão adicionadas aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script>
+            document.getElementById('entryForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const type = document.getElementById('type').value;
+                const description = document.getElementById('description').value;
+                const amount = document.getElementById('amount').value;
 
-            const tableBody = document.getElementById('entriesTableBody');
-            const newRow = document.createElement('tr');
+                const tableBody = document.getElementById('entriesTableBody');
+                const newRow = document.createElement('tr');
 
-            const typeCell = document.createElement('td');
-            typeCell.textContent = type;
-            newRow.appendChild(typeCell);
+                const typeCell = document.createElement('td');
+                typeCell.textContent = type;
+                newRow.appendChild(typeCell);
 
-            const descriptionCell = document.createElement('td');
-            descriptionCell.textContent = description;
-            newRow.appendChild(descriptionCell);
+                const descriptionCell = document.createElement('td');
+                descriptionCell.textContent = description;
+                newRow.appendChild(descriptionCell);
 
-            const amountCell = document.createElement('td');
-            amountCell.textContent = amount;
-            newRow.appendChild(amountCell);
+                const amountCell = document.createElement('td');
+                amountCell.textContent = amount;
+                newRow.appendChild(amountCell);
 
-            tableBody.appendChild(newRow);
+                tableBody.appendChild(newRow);
 
-            document.getElementById('entryForm').reset();
-        });
-    </script>
+                document.getElementById('entryForm').reset();
+            });
+        </script>
+    </main>
 </body>
 </html>
