@@ -62,7 +62,7 @@ body, html {
 main {
     display: flex;
     flex: 1;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 #asideManual {
@@ -117,6 +117,7 @@ main {
 .concept p, .concept ul {
     font-size: 16px;
     line-height: 1.6;
+    text-indent: 2em;
 }
 
 .concept ul {
