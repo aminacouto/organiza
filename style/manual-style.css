@@ -71,6 +71,8 @@ main {
     padding: 20px;
     border-right: 1px solid var(--cor-destaque);
     flex-shrink: 0;
+    position: fixed;
+    height: 100vh;
 }
 
 #navManual a {
@@ -85,6 +87,7 @@ main {
     border-radius: 5px;
     font-size: 14px;
     transition: all 0.3s;
+    
 }
 
 #navManual a:hover {
@@ -107,7 +110,7 @@ main {
     display: block;
     opacity: 1;
 }
-.concept h2 {
+.concept h2, h3 {
     color: var(--cor-verde);
     margin-bottom: 10px;
     border-left: 5px solid var(--cor-verde);
