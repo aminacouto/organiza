@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/gerenciador-style.css">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <!-- jQuery (obrigatório para o DataTables) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <title>Gerenciador mensal</title>
 </head>
 <header>
@@ -16,40 +23,42 @@
         <a href="gerenciador.html">Gerenciador</a>
     </nav>
 </header>
+
 <body>
     <h1>Gerenciador Mensal</h1>
     <main>
-        <div class="container">
-            <form id="entryForm">
-                <label for="type">Tipo:</label>
-                <select id="type" name="type">
-                    <option value="despesa">Despesa</option>
-                    <option value="renda">Renda</option>
-                </select>
-                <label for="description">Descrição:</label>
-                <input type="text" id="description" name="description" required>
-                <label for="amount">Valor:</label>
-                <input type="number" id="amount" name="amount" required>
-                <button type="submit">Adicionar</button>
-            </form>
-    
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tipo</th>
-                            <th>Descrição</th>
-                            <th>Valor</th>
-                            <th>Ações</th>
-                        </tr>
-                    </thead>
-                    <tbody id="entriesTableBody">
-                        <!-- Entradas serão adicionadas aqui -->
-                    </tbody>
-                </table>
-            </div>
+        <form id="form-gastos">
+            <input type="date" id="data" required>
+            <input type="text" id="descricao" placeholder="Descrição" required>
+            <input type="number" id="valor" placeholder="Valor (R$)" step="0.01" required>
+            <select id="categoria" required>
+                <option value="">Selecione a categoria</option>
+                <option value="Alimentação">Alimentação</option>
+                <option value="Transporte">Transporte</option>
+                <option value="Comunicação">Comunicação</option>
+                <option value="Lazer">Lazer</option>
+                <option value="Educação">Educação</option>
+            </select>
+            <button type="submit">Adicionar Gasto</button>
+        </form>
+
+        <!-- Contêiner da tabela -->
+        <div class="table-container">
+            <table id="tabela-gastos" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Categoria</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
         </div>
     </main>
     <script src="gerenciador.js"></script>
 </body>
+
 </html>
