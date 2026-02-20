@@ -31,7 +31,14 @@ header {
 .logo img {
     width: 180px;    
 }
-
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: var(--cor-letra);
+    cursor: pointer;
+}
 header nav {
     display: flex;
     gap: 20px;
@@ -65,6 +72,15 @@ main {
     margin-top: 60px;
 }
 
+.conteudo {
+    display: flex;
+    flex: 1;
+    margin-top: 60px;
+    margin-left: 350px;
+    padding: 24px;
+    justify-content: center;
+}
+
 #asideManual {
     width: 350px;
     background-color: var(--cor-cinza);
@@ -72,7 +88,9 @@ main {
     border-right: 1px solid var(--cor-destaque);
     flex-shrink: 0;
     position: fixed;
-    height: 100vh;
+    top: 60px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
 }
 
 #navManual a {
@@ -93,6 +111,17 @@ main {
 #navManual a:hover {
     background-color: var(--cor-destaque);
     transform: scale(1.05);
+}
+
+#asideManual::-webkit-scrollbar {
+    width: 8px;
+}
+#asideManual::-webkit-scrollbar-track {
+    background: transparent;
+}
+#asideManual::-webkit-scrollbar-thumb {
+    background-color: var(--cor-destaque);
+    border-radius: 4px;
 }
 
 .concept {
@@ -129,4 +158,138 @@ main {
 
 .concept ul li {
     margin-bottom: 8px;
+}
+
+/* =====================================================
+   EXTRA LARGE — até 1900px
+===================================================== */
+@media (max-width: 1900px) {
+    .concept {
+        max-width: 1100px;
+    }
+}
+
+/* =====================================================
+   EXTRA LARGE — até 1600px
+===================================================== */
+@media (max-width: 1600px) {
+    .concept {
+        max-width: 1000px;
+    }
+}
+
+/* =====================================================
+   LARGE — até 1200px (Desktop menor)
+===================================================== */
+@media (max-width: 1200px) {
+
+    #asideManual {
+        width: 300px;
+    }
+
+    .conteudo {
+        margin-left: 300px;
+    }
+}
+
+/* =====================================================
+   MEDIUM — até 992px (Tablet)
+===================================================== */
+@media (max-width: 992px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    #asideManual {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        margin-top: 20px;
+    }
+
+    .conteudo {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 18px;
+        flex-direction: column;
+    }
+
+    .concept {
+        margin: 12px 0;
+        padding: 20px;
+    }
+}
+
+/* =====================================================
+   SMALL — até 768px (Tablet pequeno / celular grande)
+===================================================== */
+@media (max-width: 768px) {
+
+    header {
+        padding: 12px 18px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    /* ativa menu burger */
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor-cinza);
+
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+
+        border-bottom: 2px solid var(--cor-verde);
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    header nav.active {
+        max-height: 350px;
+    }
+}
+
+/* =====================================================
+   EXTRA SMALL — até 480px (Celular)
+===================================================== */
+@media (max-width: 480px) {
+
+    header {
+        padding: 10px 14px;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    .concept {
+        padding: 16px;
+    }
+
+    .concept p,
+    .concept ul {
+        font-size: 15px;
+        text-indent: 1em;
+    }
 }

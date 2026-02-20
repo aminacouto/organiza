@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/manual-style.css">
+    <link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon">
     <title>Manual de Educação Financeira</title>
 </head>
-<header>
-    <div class="logo">
-        <img src="asset/logo-bg.png" alt="Logo da Plataforma">
-    </div>
-    <nav id="navMenu">
-        <a href="index.html">Início</a>
-        <a href="manual.html">Manual</a>
-        <a href="gerenciador.html">Gerenciador</a>
-    </nav>
-</header>
 
 <body>
+    <header>
+        <div class="logo">
+            <img src="asset/logo-bg.png" alt="Logo da Plataforma">
+        </div>
+        <button id="menuToggle" class="menu-toggle">☰</button>
+        <nav id="navMenu">
+            <!--<a href="index.html">Início</a>-->
+            <a href="manual.html">Manual</a>
+            <a href="gerenciador.html">Gerenciador</a>
+        </nav>
+    </header>
     <main>
         <aside id="asideManual">
             <nav id="navManual">
@@ -40,304 +42,345 @@
         </aside>
 
 
-        <!-- Seções de Conceitos Básicos -->
-        <div id="introducao" class="concept active">
-            <h2>Introdução</h2> <br><br>
-            <p>A educação financeira é uma habilidade essencial para garantir estabilidade econômica e qualidade de
-                vida. No ambiente escolar, introduzir conceitos financeiros pode preparar alunos e professores para
-                tomar decisões mais conscientes sobre dinheiro. Compreender a importância do planejamento financeiro
-                desde cedo permite que as pessoas desenvolvam hábitos saudáveis, evitem dívidas desnecessárias e
-                consigam alcançar seus objetivos financeiros ao longo da vida.</p><br>
-
-            <p>Este manual tem como objetivo apresentar conceitos básicos de finanças pessoais, dicas práticas para
-                gestão do dinheiro e oferecer ferramentas para um planejamento financeiro eficiente. Através deste
-                material, os leitores aprenderão a administrar sua renda, evitar armadilhas financeiras e tomar decisões
-                mais seguras sobre consumo e investimentos.</p>
-        </div>
-        <div id="orçamento" class="concept">
-            <h2>Orçamento</h2> <br><br>
-            <p>Planejamento detalhado das receitas e despesas ao longo de um período. Um orçamento bem estruturado ajuda
-                a evitar gastos desnecessários e permite um maior controle sobre as finanças. <br> Ele pode ser dividido
-                em:</p>
-            <ul><br>
-                <li><strong>Orçamento pessoal:</strong> Voltado para indivíduos, ajudando a equilibrar ganhos e gastos
-                    do dia a dia.</li><br>
-                <li><strong>Orçamento familiar:</strong> Inclui todos os membros da família, garantindo que despesas
-                    domésticas sejam cobertas e poupando para metas em conjunto.</li>
-            </ul>
-            <br><br>
-            <h3>Exemplo de Orçamento Pessoal</h3>
-            <p><strong>Situação:</strong> Você ganha R$ 2.000,00 por mês e tem as seguintes despesas fixas e variáveis:
-            </p> <br>
-            <ol>
-                <li><strong>Despesas fixas:</strong></li>
+        <section class="conteudo">
+            <!-- Seções de Conceitos Básicos -->
+            <div id="introducao" class="concept active">
+                <h2>Introdução</h2> <br><br>
+                <p>A educação financeira é uma habilidade essencial para garantir estabilidade econômica e qualidade de
+                    vida. No ambiente escolar, introduzir conceitos financeiros pode preparar alunos e professores para
+                    tomar decisões mais conscientes sobre dinheiro. Compreender a importância do planejamento financeiro
+                    desde cedo permite que as pessoas desenvolvam hábitos saudáveis, evitem dívidas desnecessárias e
+                    consigam alcançar seus objetivos financeiros ao longo da vida.</p><br>
+                <p>Este manual tem como objetivo apresentar conceitos básicos de finanças pessoais, dicas práticas para
+                    gestão do dinheiro e oferecer ferramentas para um planejamento financeiro eficiente. Através deste
+                    material, os leitores aprenderão a administrar sua renda, evitar armadilhas financeiras e tomar
+                    decisões
+                    mais seguras sobre consumo e investimentos.</p>
+            </div>
+            <div id="orçamento" class="concept">
+                <h2>Orçamento</h2> <br><br>
+                <p>Planejamento detalhado das receitas e despesas ao longo de um período. Um orçamento bem estruturado
+                    ajuda
+                    a evitar gastos desnecessários e permite um maior controle sobre as finanças. <br> Ele pode ser
+                    dividido
+                    em:</p>
+                <ul><br>
+                    <li><strong>Orçamento pessoal:</strong> Voltado para indivíduos, ajudando a equilibrar ganhos e
+                        gastos
+                        do dia a dia.</li><br>
+                    <li><strong>Orçamento familiar:</strong> Inclui todos os membros da família, garantindo que despesas
+                        domésticas sejam cobertas e poupando para metas em conjunto.</li>
+                </ul>
+                <br><br>
+                <h3>Exemplo de Orçamento Pessoal</h3>
+                <p><strong>Situação:</strong> Você ganha R$ 2.000,00 por mês e tem as seguintes despesas fixas e
+                    variáveis:
+                </p> <br>
+                <ol>
+                    <li><strong>Despesas fixas:</strong></li>
+                    <ul>
+                        <li>Aluguel: R$ 800</li>
+                        <li>Conta de luz: R$ 100</li>
+                        <li>Internet: R$ 150</li>
+                        <li>Mensalidade escolar: R$ 300</li>
+                    </ul> <br>
+                    <li><strong>Despesas variáveis:</strong></li>
+                    <ul>
+                        <li>Alimentação (supermercado): R$ 350</li>
+                        <li>Transporte: R$ 100</li>
+                        <li>Lazer: R$ 100</li>
+                    </ul>
+                </ol> <br>
+                <p><strong>Passos para o Orçamento:</strong></p>
                 <ul>
-                    <li>Aluguel: R$ 800</li>
-                    <li>Conta de luz: R$ 100</li>
-                    <li>Internet: R$ 150</li>
-                    <li>Mensalidade escolar: R$ 300</li>
+                    <li><strong>Total de receitas: </strong>R$ 2.000,00</li>
+                    <li><strong>Total de despesas fixas: </strong>R$ 800 (aluguel) + R$ 100 (luz) + R$ 150 (internet) +
+                        R$
+                        300 (mensalidade) = <strong>R$ 1.350,00</strong></li>
+                    <li><strong>Total de despesas variáveis: </strong>R$ 350 (alimentação) + R$ 100 (transporte) + R$
+                        100
+                        (lazer) = <strong>R$ 550,00</strong></li><br>
+                    <li><strong>Total de despesas: </strong> R$ 1.350 (fixas) + R$ 550 (variáveis) = <strong>R$
+                            1.900,00</strong></li>
+                    <li><strong>Saldo disponível: </strong>R$ 2.000 (receitas) - R$ 1.900 (despesas) = <strong>R$
+                            100,00</strong></li>
+                </ul>
+            </div>
+            <div id="receita" class="concept">
+                <h2>Receita</h2><br><br>
+                <p>Todo o dinheiro que você recebe, seja de mesada, salário, trabalhos autônomos, benefícios
+                    governamentais
+                    ou outras fontes de renda. <br>
+                    Pode ser classificada em:</p>
+                <ul><br>
+                    <li><strong>Receita ativa:</strong> Quando o dinheiro é ganho através do trabalho direto, como um
+                        emprego ou prestação de serviço.</li><br>
+                    <li><strong>Receita passiva:</strong> Quando o dinheiro é obtido sem esforço contínuo, como
+                        aluguéis,
+                        dividendos de ações ou juros sobre investimentos.</li>
                 </ul> <br>
-
-                <li><strong>Despesas variáveis:</strong></li>
+                <p>Agora, com esse orçamento, você sabe que, ao final do mês, sobrará apenas R$ 100. Esse valor pode ser
+                    direcionado para uma poupança ou para pagar uma dívida.
+                </p>
+            </div>
+            <div id="despesas" class="concept">
+                <h2>Despesas Fixas e Variáveis</h2><br><br>
                 <ul>
-                    <li>Alimentação (supermercado): R$ 350</li>
-                    <li>Transporte: R$ 100</li>
-                    <li>Lazer: R$ 100</li>
+                    <li><strong>Despesas Fixas:</strong> Gastos recorrentes e previsíveis, como aluguel, contas de luz,
+                        internet e mensalidades escolares.</li><br>
+                    <li><strong>Despesas Variáveis:</strong> Gastos que mudam de mês para mês, como lazer, alimentação
+                        fora
+                        de casa, compras eventuais e transporte público.</li><br>
+                    <li><strong>Despesas Supérfluas:</strong> Gastos que podem ser reduzidos ou eliminados sem
+                        comprometer o
+                        bem-estar, como assinaturas de serviços não utilizados ou compras impulsivas.</li>
                 </ul>
-            </ol> <br>
-
-            <p><strong>Passos para o Orçamento:</strong></p>
-            <ul>
-                <li><strong>Total de receitas: </strong>R$ 2.000,00</li>
-                <li><strong>Total de despesas fixas: </strong>R$ 800 (aluguel) + R$ 100 (luz) + R$ 150 (internet) + R$
-                    300 (mensalidade) = <strong>R$ 1.350,00</strong></li>
-                <li><strong>Total de despesas variáveis: </strong>R$ 350 (alimentação) + R$ 100 (transporte) + R$ 100
-                    (lazer) = <strong>R$ 550,00</strong></li><br>
-
-                <li><strong>Total de despesas: </strong> R$ 1.350 (fixas) + R$ 550 (variáveis) = <strong>R$ 1.900,00</strong></li>
-                <li><strong>Saldo disponível: </strong>R$ 2.000 (receitas) - R$ 1.900 (despesas) = <strong>R$ 100,00</strong></li>
-            </ul>
-        </div>
-        <div id="receita" class="concept">
-            <h2>Receita</h2><br><br>
-            <p>Todo o dinheiro que você recebe, seja de mesada, salário, trabalhos autônomos, benefícios governamentais
-                ou outras fontes de renda. <br>
-                Pode ser classificada em:</p>
-            <ul><br>
-                <li><strong>Receita ativa:</strong> Quando o dinheiro é ganho através do trabalho direto, como um
-                    emprego ou prestação de serviço.</li><br>
-                <li><strong>Receita passiva:</strong> Quando o dinheiro é obtido sem esforço contínuo, como aluguéis,
-                    dividendos de ações ou juros sobre investimentos.</li>
-            </ul> <br>
-            <p>Agora, com esse orçamento, você sabe que, ao final do mês, sobrará apenas R$ 100. Esse valor pode ser
-                direcionado para uma poupança ou para pagar uma dívida.
-
-            </p>
-        </div>
-        <div id="despesas" class="concept">
-            <h2>Despesas Fixas e Variáveis</h2><br><br>
-            <ul>
-                <li><strong>Despesas Fixas:</strong> Gastos recorrentes e previsíveis, como aluguel, contas de luz,
-                    internet e mensalidades escolares.</li><br>
-                <li><strong>Despesas Variáveis:</strong> Gastos que mudam de mês para mês, como lazer, alimentação fora
-                    de casa, compras eventuais e transporte público.</li><br>
-                <li><strong>Despesas Supérfluas:</strong> Gastos que podem ser reduzidos ou eliminados sem comprometer o
-                    bem-estar, como assinaturas de serviços não utilizados ou compras impulsivas.</li>
-            </ul>
-        </div>
-        <div id="poupança" class="concept">
-            <h2>Poupança</h2><br><br>
-            <p>Reserva financeira destinada a emergências ou realização de metas futuras. Para uma boa poupança,
-                recomenda-se guardar pelo menos 10% da renda mensal. <br>
-                Existem diferentes tipos de poupança:</p><br>
-            <ul>
-                <li><strong>Reserva de emergência:</strong> Dinheiro guardado para imprevistos, como problemas de saúde,
-                    consertos emergenciais ou perda de emprego.</li><br>
-                <li><strong>Poupança para metas:</strong> Valor guardado para objetivos específicos, como viagens,
-                    compra de bens ou realização de cursos.</li>
-            </ul> <br><br>
-
-            <h3>Exemplo de Planejamento para Metas de Economia</h3><br>
-            <p><strong>Objetivo:</strong>Você quer economizar R$ 1.200 para uma viagem no final do ano (em 12 meses).
-                <br> <strong>Passos:</strong></p> <br>
-            <ul>
-                <li><strong>Meta de economia:</strong> R$ 1.200</li>
-                <li><strong>Período:</strong> 12 meses</li>
-                <li><strong>Valor mensal a economizar:</strong> R$ 1.200 ÷ 12 = R$ 100 por mês
-                </li>
-            </ul><br>
-            <p>Você pode começar a economizar R$ 100 todo mês e, ao final de 12 meses, terá R$ 1.200 para a sua viagem.
-                Se conseguir economizar um pouco mais, poderá alcançar a meta mais rápido.</p>
-
-        </div>
-        <div id="investimentos" class="concept">
-            <h2>Investimentos</h2><br><br>
-            <p>Aplicação de dinheiro em ativos financeiros ou bens que possam gerar rendimento ao longo do tempo. Os
-                investimentos podem ser de baixo, médio ou alto risco e incluem opções como caderneta de poupança,
-                ações, fundos imobiliários e previdência privada. <br>
-                Os investimentos podem ser classificados em:
-            </p><br>
-            <ul>
-                <li><strong>Renda fixa:</strong> Opções mais seguras, como Tesouro Direto, CDBs e poupança, onde a
-                    rentabilidade pode ser previsível.</li><br>
-                <li><strong>Renda variável:</strong> Opções com maior risco, mas possibilidade de retorno superior, como
-                    ações e fundos imobiliários.</li>
-            </ul><br><br>
-
-            <h3>Exemplos de Investimentos</h3><br>
-            <p>Muitas pessoas acham que é preciso muito dinheiro para começar a investir, mas você pode começar com valores pequenos e, com o tempo, construir um portfólio de investimentos. Aqui estão algumas opções acessíveis para quem está começando:</p><br>
-
-            <ol>
-                <li><strong>Tesouro Direto</strong></li>
-                <p>O Tesouro Direto é uma das formas mais seguras de investimento no Brasil. Com apenas R$ 30,00 você já pode começar a investir. A ideia é emprestar dinheiro ao governo, que paga uma rentabilidade sobre o valor investido.</p>
+            </div>
+            <div id="poupança" class="concept">
+                <h2>Poupança</h2><br><br>
+                <p>Reserva financeira destinada a emergências ou realização de metas futuras. Para uma boa poupança,
+                    recomenda-se guardar pelo menos 10% da renda mensal. <br>
+                    Existem diferentes tipos de poupança:</p><br>
                 <ul>
-                    <li><strong>Exemplo: </strong>Se você investir R$ 50,00 por mês no Tesouro Direto, pode acumular um bom valor ao longo do tempo, com segurança. Imagine que você investe por 12 meses, e o retorno médio seja de 8% ao ano. No final do ano, você terá um pouco mais de R$ 600,00, com o rendimento já incluído!</li>
-                </ul><br>
-
-                <li><strong>Fundos de Investimento</strong></li>
-                <p>Fundos de investimento são uma forma de reunir o dinheiro de várias pessoas e investir em diferentes tipos de ativos, como ações, títulos e imóveis. Você pode começar com valores baixos, como R$ 50,00 a R$ 100,00, dependendo do fundo.</p>
+                    <li><strong>Reserva de emergência:</strong> Dinheiro guardado para imprevistos, como problemas de
+                        saúde,
+                        consertos emergenciais ou perda de emprego.</li><br>
+                    <li><strong>Poupança para metas:</strong> Valor guardado para objetivos específicos, como viagens,
+                        compra de bens ou realização de cursos.</li>
+                </ul> <br><br>
+                <h3>Exemplo de Planejamento para Metas de Economia</h3><br>
+                <p><strong>Objetivo:</strong>Você quer economizar R$ 1.200 para uma viagem no final do ano (em 12
+                    meses).
+                    <br> <strong>Passos:</strong>
+                </p> <br>
                 <ul>
-                    <li><strong>Exemplo: </strong>Fundos de investimentos têm a vantagem de permitir que você tenha acesso a uma variedade de investimentos com pouco dinheiro. Se você investir R$ 100,00 em um fundo, o dinheiro será distribuído em várias opções de investimentos, o que ajuda a reduzir o risco.</li>
-                </ul><br>
-
-                <li><strong>Ações de Empresas (Bovespa)</strong></li>
-                <p>Investir em ações é uma opção de risco um pouco maior, mas também pode trazer retornos maiores. Com R$ 50,00 você pode começar a investir em ações de empresas na Bolsa de Valores.</p>
-                <ul>
-                    <li><strong>Exemplo: </strong>Se você escolher uma empresa que esteja com bom crescimento e investir R$ 50,00, o valor pode subir ou descer dependendo do desempenho da empresa. No longo prazo, quem escolhe boas empresas pode obter um bom retorno.</li>
-                </ul><br><br>
-            </ol>
-            <h3>Riscos e Benefícios</h3><br>
-            <ol>
-                <li><strong>Riscos: </strong>Todo investimento envolve algum tipo de risco. O mais importante é entender esses riscos antes de investir. Veja alguns exemplos:</li>
-                <ul>
-                    <li><strong>Risco de mercado: </strong>Isso acontece quando os preços dos ativos (ações, títulos, etc.) podem subir ou descer devido a mudanças no mercado ou na economia. Por exemplo, ações podem cair em momentos de crise econômica.</li>
-                    <li><strong>Risco de crédito: </strong>Esse risco acontece quando a empresa ou governo que emitiu o investimento não paga o que prometeu, o que pode acontecer em alguns tipos de investimentos.</li>
-                    <li><strong>Risco de liquidez: </strong>Significa que pode ser difícil vender o investimento quando você precisar. Por exemplo, imóveis podem demorar mais para serem vendidos, o que não acontece com investimentos mais líquidos, como ações ou fundos.</li>
-                </ul><br>
-
-                <li><strong>Benefícios: </strong>Investir, quando feito de maneira planejada, tem diversos benefícios:</li>
-                <ul>
-                    <li><strong>Rentabilidade: </strong>Muitos investimentos, como Tesouro Direto ou fundos de investimento, podem render mais do que simplesmente deixar o dinheiro na conta bancária ou na poupança.</li>
-                    <li><strong>Aposentadoria: </strong>Investir desde jovem pode garantir um futuro financeiro mais seguro, permitindo que você tenha uma aposentadoria mais tranquila. Quanto mais cedo você começar, mais tempo o seu dinheiro terá para crescer.</li>
-                    <li><strong>Diversificação: </strong>Investir em diferentes tipos de ativos (ações, títulos, imóveis, etc.) reduz o risco. Isso significa que, se um investimento não for bem, outros podem estar indo melhor.</li>
-                </ul>
-            </ol>
-        </div>
-        <div id="inflação" class="concept">
-            <h2>Inflação</h2><br><br>
-            <p>Aumento contínuo e generalizado dos preços de bens e serviços ao longo do tempo, reduzindo o poder de
-                compra do dinheiro. É um fator crucial a ser considerado na hora de investir e planejar a longo prazo.
-            </p>
-        </div>
-        <div id="juros" class="concept">
-            <h2>Juros</h2><br><br>
-            <p>Custo do dinheiro ao longo do tempo. </p>
-
-            <p>Existem dois tipos principais:</p><br>
-            <ul>
-                <li><strong>Juros simples:</strong> Calculados apenas sobre o valor inicial da dívida ou investimento.
-                </li><br>
-                <li><strong>Juros compostos:</strong> Calculados sobre o valor acumulado ao longo do tempo, o que faz
-                    com que cresçam exponencialmente.</li>
-            </ul> <br><br>
-
-            <h3>Exemplo de Simulação de Juros Compostos</h3><br>
-            <p><strong>Situação: </strong>Você investe R$ 1.000 em uma aplicação com rendimento de 5% ao mês, por 6 meses.</p> <br>
-            <p><strong>Cálculo </strong>(juros compostos):</p>
-            <p>Fórmula: <strong>VF = VP × (1 + i)^n</strong></li>
-            <ul>
-                <li><strong>VP </strong>= R$ 1.000 (valor principal)</li>
-                <li><strong>i </strong>= 5% ao mês (0,05)</li>
-                <li><strong>n </strong>= 6 meses</li>
-            </ul><br>
-
-            <p><strong>Cálculo:</strong></p>
-            <ul>
-                <li><strong>VF = 1.000 × (1 + 0,05)^6</strong></li>
-                <li><strong>VF = 1.000 × (1,05)^6</strong></li>
-                <li><strong>VF = 1.000 × 1,3401</strong></li>
-                <li><strong>VF = R$ 1.340,10</strong></li>
-            </ul><br>
-            <p>Ao final de 6 meses, o valor investido será de R$ 1.340,10, ou seja, você terá ganho R$ 340,10 apenas com
-                os juros compostos.</p>
-
-        </div>
-        <div id="endividamento" class="concept">
-            <h2>Endividamento</h2><br><br>
-            <p>Uso excessivo de crédito ou empréstimos sem planejamento, podendo levar a dificuldades financeiras. O
-                ideal é manter as dívidas sob controle e evitar comprometer mais de 30% da renda mensal com pagamentos
-                parcelados. <br>
-                Algumas boas práticas incluem:</p><br>
-            <ul>
-                <li>Evitar o uso excessivo do cartão de crédito sem planejamento.</li><br>
-                <li>Comparar taxas de juros antes de fazer financiamentos ou empréstimos.</li><br>
-                <li>Pagar as faturas sempre em dia para evitar multas e juros elevados.</li><br>
-            </ul>
-        </div>
-
-        <!-- Seções adicionais -->
-        <div id="dicas" class="concept">
-            <h2>Dicas para um Bom Controle Financeiro</h2><br><br>
-            <ul>
-                <li>Registre todas as entradas e saídas de dinheiro.</li><br>
-                <li>Defina metas financeiras de curto e longo prazo.</li><br>
-                <li>Evite compras por impulso.</li><br>
-                <li>Estabeleça um percentual da renda para economizar todo mês.</li><br>
-                <li>Priorize o pagamento de dívidas para evitar juros altos.</li><br>
-                <li>Evite parcelamentos longos e sem necessidade.</li><br>
-                <li>Utilize o gerenciador financeiro da plataforma para acompanhar seus gastos.</li>
-            </ul>
-        </div>
-
-        <div id="gerenciador" class="concept">
-            <h2>Como Utilizar o Gerenciador Financeiro</h2><br><br>
-            <p>Nosso gerenciador financeiro online permite que você:</p>
-            <ul><br>
-                <li>Registre sua receita e despesas.</li><br>
-                <li>Visualize gráficos de controle financeiro.</li><br>
-                <li>Acompanhe sua evolução ao longo do tempo.</li><br>
-            </ul>
-        </div>
-
-        <div id="exercicios" class="concept">
-            <h2>Exercícios e Exemplos Práticos</h2><br><br>
-            <ol>
-                <li>Desafio do Orçamento: Anote todos os seus gastos por uma semana e analise onde pode economizar.</li>
-                <br>
-                <li>Planejamento para um Objetivo: Simule quanto tempo levaria para juntar dinheiro para algo que
-                    deseja.</li><br>
-                <li>Simulação de Juros: Entenda como os juros podem trabalhar a favor (investimentos) ou contra
-                    (empréstimos).</li><br>
-                <li>Teste do Consumo Consciente: Antes de comprar algo, reflita!
-                </li><br>
-                <h3>Exemplo de Teste do Consumo Consciente</h3>
-                <p><strong>Situação: </strong>Você vai ao shopping e vê um par de tênis que custa R$ 250. Você tem uma meta de economia de R$ 100 por mês e não quer comprometer esse valor. <br> <strong>Reflexão:</strong></p>
-                
-                <ul>
-                    <li>Pergunte-se: "Eu realmente preciso deste par de tênis agora?"</li>
-                    <li>Se a resposta for "não", você pode adiar a compra ou pesquisar alternativas mais baratas.</li>
-                    <li>Se a resposta for "sim", pergunte-se: "Eu já tenho algo similar em casa?" Ou, "Posso encontrar um preço melhor em outra loja ou online?"</li><br>
-                </ul>
-
-                <li>Desafio do Cofrinho: Economize um valor fixo por dia e veja quanto acumulou ao final do mês.
-                </li>
-                <h3>Exemplo de Desafio do Cofrinho</h3>
-                <p><strong>Situação: </strong>Você decide economizar R$ 5 por dia para uma viagem. <br> <strong>Passos:</strong></p><br>
-                <ul>
-                    <li><strong>Valor diário: </strong>R$ 5</li>
-                    <li><strong>Valor mensal: </strong>R$ 5 × 30 = R$ 150
+                    <li><strong>Meta de economia:</strong> R$ 1.200</li>
+                    <li><strong>Período:</strong> 12 meses</li>
+                    <li><strong>Valor mensal a economizar:</strong> R$ 1.200 ÷ 12 = R$ 100 por mês
                     </li>
-                    <li><strong>Valor anual: </strong>R$ 5 × 365 = R$ 1.825</li>
+                </ul><br>
+                <p>Você pode começar a economizar R$ 100 todo mês e, ao final de 12 meses, terá R$ 1.200 para a sua
+                    viagem.
+                    Se conseguir economizar um pouco mais, poderá alcançar a meta mais rápido.</p>
+            </div>
+            <div id="investimentos" class="concept">
+                <h2>Investimentos</h2><br><br>
+                <p>Aplicação de dinheiro em ativos financeiros ou bens que possam gerar rendimento ao longo do tempo. Os
+                    investimentos podem ser de baixo, médio ou alto risco e incluem opções como caderneta de poupança,
+                    ações, fundos imobiliários e previdência privada. <br>
+                    Os investimentos podem ser classificados em:
+                </p><br>
+                <ul>
+                    <li><strong>Renda fixa:</strong> Opções mais seguras, como Tesouro Direto, CDBs e poupança, onde a
+                        rentabilidade pode ser previsível.</li><br>
+                    <li><strong>Renda variável:</strong> Opções com maior risco, mas possibilidade de retorno superior,
+                        como
+                        ações e fundos imobiliários.</li>
+                </ul><br><br>
+                <h3>Exemplos de Investimentos</h3><br>
+                <p>Muitas pessoas acham que é preciso muito dinheiro para começar a investir, mas você pode começar com
+                    valores pequenos e, com o tempo, construir um portfólio de investimentos. Aqui estão algumas opções
+                    acessíveis para quem está começando:</p><br>
+                <ol>
+                    <li><strong>Tesouro Direto</strong></li>
+                    <p>O Tesouro Direto é uma das formas mais seguras de investimento no Brasil. Com apenas R$ 30,00
+                        você já pode começar a investir. A ideia é emprestar dinheiro ao governo, que paga uma
+                        rentabilidade sobre o valor investido.</p>
+                    <ul>
+                        <li><strong>Exemplo: </strong>Se você investir R$ 50,00 por mês no Tesouro Direto, pode acumular
+                            um bom valor ao longo do tempo, com segurança. Imagine que você investe por 12 meses, e o
+                            retorno médio seja de 8% ao ano. No final do ano, você terá um pouco mais de R$ 600,00, com
+                            o rendimento já incluído!</li>
+                    </ul><br>
+                    <li><strong>Fundos de Investimento</strong></li>
+                    <p>Fundos de investimento são uma forma de reunir o dinheiro de várias pessoas e investir em
+                        diferentes tipos de ativos, como ações, títulos e imóveis. Você pode começar com valores baixos,
+                        como R$ 50,00 a R$ 100,00, dependendo do fundo.</p>
+                    <ul>
+                        <li><strong>Exemplo: </strong>Fundos de investimentos têm a vantagem de permitir que você tenha
+                            acesso a uma variedade de investimentos com pouco dinheiro. Se você investir R$ 100,00 em um
+                            fundo, o dinheiro será distribuído em várias opções de investimentos, o que ajuda a reduzir
+                            o risco.</li>
+                    </ul><br>
+                    <li><strong>Ações de Empresas (Bovespa)</strong></li>
+                    <p>Investir em ações é uma opção de risco um pouco maior, mas também pode trazer retornos maiores.
+                        Com R$ 50,00 você pode começar a investir em ações de empresas na Bolsa de Valores.</p>
+                    <ul>
+                        <li><strong>Exemplo: </strong>Se você escolher uma empresa que esteja com bom crescimento e
+                            investir R$ 50,00, o valor pode subir ou descer dependendo do desempenho da empresa. No
+                            longo prazo, quem escolhe boas empresas pode obter um bom retorno.</li>
+                    </ul><br><br>
+                </ol>
+                <h3>Riscos e Benefícios</h3><br>
+                <ol>
+                    <li><strong>Riscos: </strong>Todo investimento envolve algum tipo de risco. O mais importante é
+                        entender esses riscos antes de investir. Veja alguns exemplos:</li>
+                    <ul>
+                        <li><strong>Risco de mercado: </strong>Isso acontece quando os preços dos ativos (ações,
+                            títulos, etc.) podem subir ou descer devido a mudanças no mercado ou na economia. Por
+                            exemplo, ações podem cair em momentos de crise econômica.</li>
+                        <li><strong>Risco de crédito: </strong>Esse risco acontece quando a empresa ou governo que
+                            emitiu o investimento não paga o que prometeu, o que pode acontecer em alguns tipos de
+                            investimentos.</li>
+                        <li><strong>Risco de liquidez: </strong>Significa que pode ser difícil vender o investimento
+                            quando você precisar. Por exemplo, imóveis podem demorar mais para serem vendidos, o que não
+                            acontece com investimentos mais líquidos, como ações ou fundos.</li>
+                    </ul><br>
+                    <li><strong>Benefícios: </strong>Investir, quando feito de maneira planejada, tem diversos
+                        benefícios:</li>
+                    <ul>
+                        <li><strong>Rentabilidade: </strong>Muitos investimentos, como Tesouro Direto ou fundos de
+                            investimento, podem render mais do que simplesmente deixar o dinheiro na conta bancária ou
+                            na poupança.</li>
+                        <li><strong>Aposentadoria: </strong>Investir desde jovem pode garantir um futuro financeiro mais
+                            seguro, permitindo que você tenha uma aposentadoria mais tranquila. Quanto mais cedo você
+                            começar, mais tempo o seu dinheiro terá para crescer.</li>
+                        <li><strong>Diversificação: </strong>Investir em diferentes tipos de ativos (ações, títulos,
+                            imóveis, etc.) reduz o risco. Isso significa que, se um investimento não for bem, outros
+                            podem estar indo melhor.</li>
+                    </ul>
+                </ol>
+            </div>
+            <div id="inflação" class="concept">
+                <h2>Inflação</h2><br><br>
+                <p>Aumento contínuo e generalizado dos preços de bens e serviços ao longo do tempo, reduzindo o poder de
+                    compra do dinheiro. É um fator crucial a ser considerado na hora de investir e planejar a longo
+                    prazo.
+                </p>
+            </div>
+            <div id="juros" class="concept">
+                <h2>Juros</h2><br><br>
+                <p>Custo do dinheiro ao longo do tempo. </p>
+                <p>Existem dois tipos principais:</p><br>
+                <ul>
+                    <li><strong>Juros simples:</strong> Calculados apenas sobre o valor inicial da dívida ou
+                        investimento.
+                    </li><br>
+                    <li><strong>Juros compostos:</strong> Calculados sobre o valor acumulado ao longo do tempo, o que
+                        faz
+                        com que cresçam exponencialmente.</li>
+                </ul> <br><br>
+                <h3>Exemplo de Simulação de Juros Compostos</h3><br>
+                <p><strong>Situação: </strong>Você investe R$ 1.000 em uma aplicação com rendimento de 5% ao mês, por 6
+                    meses.</p> <br>
+                <p><strong>Cálculo </strong>(juros compostos):</p>
+                <p>Fórmula: <strong>VF = VP × (1 + i)^n</strong></li>
+                <ul>
+                    <li><strong>VP </strong>= R$ 1.000 (valor principal)</li>
+                    <li><strong>i </strong>= 5% ao mês (0,05)</li>
+                    <li><strong>n </strong>= 6 meses</li>
+                </ul><br>
+                <p><strong>Cálculo:</strong></p>
+                <ul>
+                    <li><strong>VF = 1.000 × (1 + 0,05)^6</strong></li>
+                    <li><strong>VF = 1.000 × (1,05)^6</strong></li>
+                    <li><strong>VF = 1.000 × 1,3401</strong></li>
+                    <li><strong>VF = R$ 1.340,10</strong></li>
+                </ul><br>
+                <p>Ao final de 6 meses, o valor investido será de R$ 1.340,10, ou seja, você terá ganho R$ 340,10 apenas
+                    com
+                    os juros compostos.</p>
+            </div>
+            <div id="endividamento" class="concept">
+                <h2>Endividamento</h2><br><br>
+                <p>Uso excessivo de crédito ou empréstimos sem planejamento, podendo levar a dificuldades financeiras. O
+                    ideal é manter as dívidas sob controle e evitar comprometer mais de 30% da renda mensal com
+                    pagamentos
+                    parcelados. <br>
+                    Algumas boas práticas incluem:</p><br>
+                <ul>
+                    <li>Evitar o uso excessivo do cartão de crédito sem planejamento.</li><br>
+                    <li>Comparar taxas de juros antes de fazer financiamentos ou empréstimos.</li><br>
+                    <li>Pagar as faturas sempre em dia para evitar multas e juros elevados.</li><br>
                 </ul>
-                <p>Ao final de um ano, você terá economizado R$ 1.825 apenas com R$ 5 por dia, o que pode ser um bom valor para complementar sua meta de viagem.</p>
+            </div>
+            <!-- Seções adicionais -->
+            <div id="dicas" class="concept">
+                <h2>Dicas para um Bom Controle Financeiro</h2><br><br>
+                <ul>
+                    <li>Registre todas as entradas e saídas de dinheiro.</li><br>
+                    <li>Defina metas financeiras de curto e longo prazo.</li><br>
+                    <li>Evite compras por impulso.</li><br>
+                    <li>Estabeleça um percentual da renda para economizar todo mês.</li><br>
+                    <li>Priorize o pagamento de dívidas para evitar juros altos.</li><br>
+                    <li>Evite parcelamentos longos e sem necessidade.</li><br>
+                    <li>Utilize o gerenciador financeiro da plataforma para acompanhar seus gastos.</li>
+                </ul>
+            </div>
+            <div id="gerenciador" class="concept">
+                <h2>Como Utilizar o Gerenciador Financeiro</h2><br><br>
+                <p>Nosso gerenciador financeiro online permite que você:</p>
+                <ul><br>
+                    <li>Registre sua receita e despesas.</li><br>
+                    <li>Visualize gráficos de controle financeiro.</li><br>
+                    <li>Acompanhe sua evolução ao longo do tempo.</li><br>
+                </ul>
+            </div>
+            <div id="exercicios" class="concept">
+                <h2>Exercícios e Exemplos Práticos</h2><br><br>
+                <ol>
+                    <li>Desafio do Orçamento: Anote todos os seus gastos por uma semana e analise onde pode economizar.
+                    </li>
+                    <br>
+                    <li>Planejamento para um Objetivo: Simule quanto tempo levaria para juntar dinheiro para algo que
+                        deseja.</li><br>
+                    <li>Simulação de Juros: Entenda como os juros podem trabalhar a favor (investimentos) ou contra
+                        (empréstimos).</li><br>
+                    <li>Teste do Consumo Consciente: Antes de comprar algo, reflita!
+                    </li><br>
+                    <h3>Exemplo de Teste do Consumo Consciente</h3>
+                    <p><strong>Situação: </strong>Você vai ao shopping e vê um par de tênis que custa R$ 250. Você tem
+                        uma meta de economia de R$ 100 por mês e não quer comprometer esse valor. <br>
+                        <strong>Reflexão:</strong>
+                    </p>
 
-            </ol>
-        </div>
-
-        <div id="recursos" class="concept">
-            <h2>Recursos Extras</h2><br><br>
-            <ul>
-                <li>Em breve!</li>
-                <!--<li>Links para artigos e vídeos sobre educação financeira.</li>
-                <li>Modelos de planilhas para quem prefere controlar offline.</li>
-                <li>Indicação de livros e aplicativos financeiros.</li>-->
-            </ul>
-        </div>
-
-        <div id="conclusao" class="concept">
-            <h2>Conclusão</h2><br><br>
-            <p>Com um bom planejamento e conhecimento financeiro, é possível evitar dívidas desnecessárias e garantir um
-                futuro mais seguro. A educação financeira deve fazer parte da rotina de todos, independentemente da
-                idade ou renda. Pequenos hábitos diários podem gerar um impacto positivo a longo prazo. </p><br>
-
-            <p>Utilize este manual e o gerenciador financeiro como aliados na sua jornada de educação financeira e
-                conquiste uma vida financeira mais equilibrada e saudável!</p>
-        </div>
+                    <ul>
+                        <li>Pergunte-se: "Eu realmente preciso deste par de tênis agora?"</li>
+                        <li>Se a resposta for "não", você pode adiar a compra ou pesquisar alternativas mais baratas.
+                        </li>
+                        <li>Se a resposta for "sim", pergunte-se: "Eu já tenho algo similar em casa?" Ou, "Posso
+                            encontrar um preço melhor em outra loja ou online?"</li><br>
+                    </ul>
+                    <li>Desafio do Cofrinho: Economize um valor fixo por dia e veja quanto acumulou ao final do mês.
+                    </li>
+                    <h3>Exemplo de Desafio do Cofrinho</h3>
+                    <p><strong>Situação: </strong>Você decide economizar R$ 5 por dia para uma viagem. <br>
+                        <strong>Passos:</strong>
+                    </p><br>
+                    <ul>
+                        <li><strong>Valor diário: </strong>R$ 5</li>
+                        <li><strong>Valor mensal: </strong>R$ 5 × 30 = R$ 150
+                        </li>
+                        <li><strong>Valor anual: </strong>R$ 5 × 365 = R$ 1.825</li>
+                    </ul>
+                    <p>Ao final de um ano, você terá economizado R$ 1.825 apenas com R$ 5 por dia, o que pode ser um bom
+                        valor para complementar sua meta de viagem.</p>
+                </ol>
+            </div>
+            <div id="recursos" class="concept">
+                <h2>Recursos Extras</h2><br><br>
+                <ul>
+                    <li>Em breve!</li>
+                    <!--<li>Links para artigos e vídeos sobre educação financeira.</li>
+                    <li>Modelos de planilhas para quem prefere controlar offline.</li>
+                    <li>Indicação de livros e aplicativos financeiros.</li>-->
+                </ul>
+            </div>
+            <div id="conclusao" class="concept">
+                <h2>Conclusão</h2><br><br>
+                <p>Com um bom planejamento e conhecimento financeiro, é possível evitar dívidas desnecessárias e
+                    garantir um
+                    futuro mais seguro. A educação financeira deve fazer parte da rotina de todos, independentemente da
+                    idade ou renda. Pequenos hábitos diários podem gerar um impacto positivo a longo prazo. </p><br>
+                <p>Utilize este manual e o gerenciador financeiro como aliados na sua jornada de educação financeira e
+                    conquiste uma vida financeira mais equilibrada e saudável!</p>
+            </div>
+        </section>
     </main>
 
     <script>
         // JavaScript para alternar entre os conceitos
-        const links = document.querySelectorAll('nav a');
+        const links = document.querySelectorAll('navManual a');
         const concepts = document.querySelectorAll('.concept');
 
         links.forEach(link => {
@@ -352,6 +395,15 @@
                 const targetConcept = document.getElementById(targetId);
                 targetConcept.classList.add('active');
             });
+        });
+    </script>
+
+    <script>
+        const toggle = document.getElementById("menuToggle");
+        const nav = document.getElementById("menuNav");
+
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
         });
     </script>
 

@@ -21,7 +21,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 110px; /* Espaço extra para o header fixo */
+    margin-top: 80px;
 }
 
 /* HEADER */
@@ -30,7 +30,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 30px;
     width: 100%;
     border-bottom: 3px solid var(--cor-verde);
     position: fixed;
@@ -219,46 +219,89 @@ button.delete-btn:hover {
 }
 
 /* FILTRO */
-#filtro-mes {
+/* =========================
+   FILTROS (NOVO VISUAL)
+========================= */
+
+.filtros-container {
+    background-color: var(--cor-cinza);
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.filtro-grupo {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 6px;
+    min-width: 160px;
 }
 
-#filtro-mes label {
-    font-size: 14px;
-    font-weight: bold;
-    color: var(--cor-letra);
+.filtro-grupo label {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.5px;
 }
 
-#filtro-mes input,
-#filtro-mes button {
-    padding: 10px;
-    font-size: 14px;
+/* SELECT MODERNO */
+.filtro-grupo select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding: 10px 40px 10px 12px;
+
+    border-radius: 8px;
     border: 2px solid var(--cor-destaque);
-    border-radius: 5px;
-    background-color: rgb(50, 50, 50);
-    color: var(--cor-letra);
-    outline: none;
-}
 
-#filtro-mes button {
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
+    background-color: rgb(50,50,50);
+    color: var(--cor-letra);
+
+    font-size: 14px;
+    font-weight: 500;
+
     cursor: pointer;
+    transition: all 0.25s ease;
 }
 
-#filtro-mes button:hover {
-    background-color: var(--cor-destaque);
+/* Hover elegante */
+.filtro-grupo select:hover {
+    border-color: var(--cor-verde);
+    transform: translateY(-1px);
 }
 
-#mes-atual {
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--cor-letra);
+/* Focus estilo app moderno */
+.filtro-grupo select:focus {
+    border-color: var(--cor-verde);
+    box-shadow: 0 0 0 2px rgba(97,136,25,0.25);
 }
+
+/* SETA CUSTOMIZADA */
+.filtro-grupo {
+    position: relative;
+}
+
+.filtro-grupo::after {
+    content: "▼";
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    font-size: 10px;
+    color: rgba(255,255,255,0.6);
+    pointer-events: none;
+}
+
+
 
 /* MEDIA QUERIES */
 @media (min-width: 600px) {
