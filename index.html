@@ -3,9 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon">
+
+    <title>Organiza</title>
+
+    <style>
+        :root {
+            --cor-verde: rgb(97, 136, 25);
+            --cor-destaque: rgb(55, 105, 16);
+            --cor-fundo: rgb(30, 30, 30);
+            --cor-cinza: rgb(45, 45, 45);    
+            --cor-letra: rgb(245, 245, 245);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            background: var(--cor-fundo);
+            color: var(--cor-letra);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ---------- HEADER ---------- */
+
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--cor-cinza);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+
+        header img {
+            height: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--cor-letra);
+            margin-left: 20px;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            color: var(--cor-verde);
+        }
+
+        /* ---------- HERO ---------- */
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .hero {
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: var(--cor-verde);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #d4d4d4;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        /* ---------- BOTÕES ---------- */
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .btn-primary {
+            background-color: var(--cor-verde);
+            color: var(--cor-letra);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--cor-destaque);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--cor-verde);
+            color: var(--cor-verde);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--cor-verde);
+            color: var(--cor-letra);
+        }
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #bdbdbd;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+<header>
+    <img src="asset/logo-bg.png" alt="Logo da Plataforma">
+
+    <nav>
+        <a href="manual.html">Manual</a>
+        <a href="gerenciador.html">Gerenciador</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h2>
+            Controle seu dinheiro.<br>
+            <span>Aprenda enquanto gerencia.</span>
+        </h2>
+
+        <p>
+            O Organiza é uma plataforma de educação financeira que une teoria e prática.
+            Aprenda conceitos essenciais sobre organização financeira através do manual
+            educativo e aplique o conhecimento utilizando o gerenciador financeiro
+            interativo da plataforma.
+        </p>
+
+        <div class="buttons">
+            <a href="gerenciador.html" class="btn btn-primary">
+                Conheça a Plataforma
+            </a>
+
+            <a href="manual.html" class="btn btn-outline">
+                Acessar Manual Financeiro
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2025 • Desenvolvido por Amina do Couto
+</footer>
+
 </body>
 </html>
